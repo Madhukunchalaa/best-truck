@@ -168,3 +168,84 @@ text-shadow: 0px 3px 41.3px #000000; /* Corrected */
     color: white;
   }
 
+/* aboutus */
+/* .about-section {
+    border: 2px solid #0d6efd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+} */
+
+.about-header {
+    padding: 0 10px;
+    color: #013469;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+} 
+
+.about-title {
+    color: #ff6b00;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.insurance-types {
+    margin-top: 20px;
+}
+
+.insurance-type {
+    margin-bottom: 10px;
+}
+
+.insurance-type i {
+    color: #ff6b00;
+    margin-right: 5px;
+}
+
+.experience-badge {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.experience-badge img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.experience-badge .years {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.experience-badge .text {
+    font-size: 0.9rem;
+}
+
+.premium-button {
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.truck-img {
+    max-width: 100%;
+    border-radius: 8px;
+}
