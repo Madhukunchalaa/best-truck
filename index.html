@@ -100,8 +100,8 @@
        
     </section>
 
-    <!-- <section class="container mt-5">
-        <!-- Desktop Carousel (multiple cards per slide) -->
+     <section class="container mt-5" style="margin-top: -8rem !important;">
+        
         <div id="desktopCarousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
             <!-- Carousel Indicators -->
             <div class="carousel-indicators">
@@ -122,7 +122,7 @@
             <div class="carousel-inner">
                 <!-- First Slide -->
                 <div class="carousel-item active">
-                    <div class="row text-center client-cards-container">
+                    <div class="row text-center client-cards-container bg-light">
                         <div class="col-md-3 client-card">
                             <img src="assets/images/zurich.png" class="img-fluid client-logo" alt="Zurich">
                             
@@ -144,22 +144,22 @@
                 
                 <!-- Second Slide -->
                 <div class="carousel-item">
-                    <div class="row text-center">
-                        <div class="col-md-3">
-                            <img src="/api/placeholder/200/100" class="img-fluid client-logo" alt="Allianz">
-                            <p class="mt-2">Allianz</p>
+                    <div class="row text-center client-cards-container bg-light">
+                        <div class="col-md-3 client-card">
+                            <img src="assets/images/zurich.png" class="img-fluid client-logo" alt="Zurich">
+                            
                         </div>
-                        <div class="col-md-3">
-                            <img src="/api/placeholder/200/100" class="img-fluid client-logo" alt="AIG">
-                            <p class="mt-2">AIG</p>
+                        <div class="col-md-3 client-card">
+                            <img src="assets/images/qbe.png" class="img-fluid client-logo" alt="QBE">
+                           
                         </div>
-                        <div class="col-md-3">
-                            <img src="/api/placeholder/200/100" class="img-fluid client-logo" alt="AAMI">
-                            <p class="mt-2">AAMI</p>
+                        <div class="col-md-3 client-card">
+                            <img src="assets/images/nti.png" class="img-fluid client-logo" alt="NTI">
+                          
                         </div>
-                        <div class="col-md-3">
-                            <img src="/api/placeholder/200/100" class="img-fluid client-logo" alt="NRMA">
-                            <p class="mt-2">NRMA</p>
+                        <div class="col-md-3 client-card">
+                            <img src="assets/images/vero.png" class="img-fluid client-logo" alt="Vero">
+                           
                         </div>
                     </div>
                 </div>
@@ -249,9 +249,252 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section> 
 
-    <div class="container">next section</div>
+    <section class="truck-insurance-quote">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center mb-4">
+              <h2 class="section-title text-orange">Get a free truck insurance quote</h2>
+            </div>
+          </div>
+          
+          <div class="row justify-content-center mb-4">
+            <div class="col-md-6 d-flex">
+              <div class="btn-group w-100" role="group">
+                <button type="button" class="btn btn-orange active">Single Truck</button>
+                <button type="button" class="btn btn-outline-orange">Multiple Truck</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-12">
+              <form class="quote-form bg-light-beige p-4 rounded">
+                <div class="row mb-3">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="name" class="form-label">Name<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="name" required>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="vehicleType" class="form-label">Types of vehicle<span class="text-danger">*</span></label>
+                    <select class="form-select" id="vehicleType" required>
+                      <option selected disabled value="">Select</option>
+                      <option>Semi-trailer</option>
+                      <option>Rigid truck</option>
+                      <option>Tow truck</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="regNumber" class="form-label">Registration Number<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="regNumber" required>
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="carryingCapacity" class="form-label">Carrying Capacity (GVM - TARE WEIGHT)<span class="text-danger">*</span></label>
+                    <select class="form-select" id="carryingCapacity" required>
+                      <option selected disabled value="">Select</option>
+                      <option>Less than 5 tonnes</option>
+                      <option>5-10 tonnes</option>
+                      <option>More than 10 tonnes</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="sumInsured" class="form-label">Sum Insured (Vehicle value) $<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="sumInsured" required>
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="contactNumber" class="form-label">Contact Number<span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" id="contactNumber" required>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="truckDetails" class="form-label">Year, Make and Model (Truck details)<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="truckDetails" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="marineGoods" class="form-label">Marine (goods in transit cover) $<span class="text-danger">*</span></label>
+                    <select class="form-select" id="marineGoods" required>
+                      <option selected disabled value="">Select</option>
+                      <option>Not required</option>
+                      <option>Up to $10,000</option>
+                      <option>Up to $50,000</option>
+                      <option>Over $50,000</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="companyName" class="form-label">Company Name (if any)<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="companyName" required>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="baseOperation" class="form-label">Base operation postcode and Suburb<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="baseOperation" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="licenseYears" class="form-label">Number of years relevant truck license held<span class="text-danger">*</span></label>
+                    <select class="form-select" id="licenseYears" required>
+                      <option selected disabled value="">Select</option>
+                      <option>Less than 2 years</option>
+                      <option>2-5 years</option>
+                      <option>5-10 years</option>
+                      <option>More than 10 years</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="address" class="form-label">Address<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="address" required>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="radiusOperation" class="form-label">Radius of operation<span class="text-danger">*</span></label>
+                    <select class="form-select" id="radiusOperation" required>
+                      <option selected disabled value="">Select</option>
+                      <option>Local only (50km)</option>
+                      <option>Regional (200km)</option>
+                      <option>Interstate</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="insuranceClaims" class="form-label">Number of truck insurance claims made in last 5 years $<span class="text-danger">*</span></label>
+                    <select class="form-select" id="insuranceClaims" required>
+                      <option selected disabled value="">Select</option>
+                      <option>None</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3 or more</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="row mb-4">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="occupation" class="form-label">Occupation<span class="text-danger">*</span></label>
+                    <select class="form-select" id="occupation" required>
+                      <option selected disabled value="">Select</option>
+                      <option>Owner-operator</option>
+                      <option>Employee</option>
+                      <option>Fleet manager</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="goodsCarried" class="form-label">Types of goods carried<span class="text-danger">*</span></label>
+                    <select class="form-select" id="goodsCarried" required>
+                      <option selected disabled value="">Select</option>
+                      <option>General freight</option>
+                      <option>Furniture/household goods</option>
+                      <option>Refrigerated goods</option>
+                      <option>Liquid/chemicals</option>
+                      <option>Livestock</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="liability" class="form-label">Public Liability cover required $<span class="text-danger">*</span></label>
+                    <select class="form-select" id="liability" required>
+                      <option selected disabled value="">Select</option>
+                      <option>Not required</option>
+                      <option>$5 million</option>
+                      <option>$10 million</option>
+                      <option>$20 million</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-orange px-5">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="transport-operator py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="assets/images/transport-truck.png" alt="Transport Truck" class="img-fluid rounded">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="text-warning fw-bold mb-3">Transport operator package</h2>
+                    <p class="mb-4">We can offer combined transport operators insurance which can cover all of the above coverage under one policy.</p>
+                    
+                    <!-- Truck and Trailer 1 -->
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-light rounded-circle p-3 me-3" style="border: 2px solid #f8f9fa;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FF7A00" class="bi bi-truck" viewBox="0 0 16 16">
+                                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm-8 2a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="text-primary fw-bold">Truck and Trailer</h5>
+                            <p>Cover for accidental loss or damage to your vehicle and/or to third parties for personal injury or damage to property arising out of the use of your vehicle.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Truck and Trailer 2 -->
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-light rounded-circle p-3 me-3" style="border: 2px solid #f8f9fa;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FF7A00" class="bi bi-truck-flatbed" viewBox="0 0 16 16">
+                                <path d="M11.5 4a.5.5 0 0 1 .5.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-4 0 1 1 0 0 1-1-1v-1h11V4.5a.5.5 0 0 1 .5-.5zM3 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm1.732-5H0V7h12.502z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="text-primary fw-bold">Truck and Trailer</h5>
+                            <p>Cover for accidental loss or damage to your vehicle and/or to third parties for personal injury or damage to property arising out of the use of your vehicle.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Marine/Transit Cover -->
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-light rounded-circle p-3 me-3" style="border: 2px solid #f8f9fa;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FF7A00" class="bi bi-water" viewBox="0 0 16 16">
+                                <path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.664 3.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.664 6.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.664 9.964a.5.5 0 0 1-.278-.65z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="text-primary fw-bold">Marine/Transit cover</h5>
+                            <p>Provides cover for your customer's freight that is damaged in transit by you. Accidental damage option also available.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Downtime Cover -->
+                    <div class="d-flex align-items-start mb-2">
+                        <div class="bg-light rounded-circle p-3 me-3" style="border: 2px solid #f8f9fa;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FF7A00" class="bi bi-alarm" viewBox="0 0 16 16">
+                                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="text-primary fw-bold">Downtime Cover</h5>
+                            <p>Provides payment of a weekly benefit if you claim loss or damage to your vehicle which has been accepted under the vehicle policy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
 
     
     
@@ -262,23 +505,23 @@
 
 
 <script>
-        // Initialize the carousel with options
-        document.addEventListener('DOMContentLoaded', function() {
-            var myCarousel = new bootstrap.Carousel(document.getElementById('clientCarousel'), {
-                interval: 5000, // Time between automatic slides (5 seconds)
-                wrap: true,     // Carousel should cycle continuously
-                keyboard: true  // React to keyboard events
-            });
+        // // Initialize the carousel with options
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     var myCarousel = new bootstrap.Carousel(document.getElementById('clientCarousel'), {
+        //         interval: 5000, // Time between automatic slides (5 seconds)
+        //         wrap: true,     // Carousel should cycle continuously
+        //         keyboard: true  // React to keyboard events
+        //     });
             
-            // Optional: Add keyboard support for left/right arrows
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'ArrowLeft') {
-                    myCarousel.prev();
-                } else if (e.key === 'ArrowRight') {
-                    myCarousel.next();
-                }
-            });
-        });
+        //     // Optional: Add keyboard support for left/right arrows
+        //     document.addEventListener('keydown', function(e) {
+        //         if (e.key === 'ArrowLeft') {
+        //             myCarousel.prev();
+        //         } else if (e.key === 'ArrowRight') {
+        //             myCarousel.next();
+        //         }
+        //     });
+        // });
 </script>
     
     
