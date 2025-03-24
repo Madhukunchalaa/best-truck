@@ -168,3 +168,307 @@ text-shadow: 0px 3px 41.3px #000000; /* Corrected */
     color: white;
   }
 
+
+
+  /* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .top-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        display: none;
+    }
+    .logo-items {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+    .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+    .get-btn {
+        margin-top: 10px;
+    }
+    .hero-text-container {
+        margin-left: 5%;
+        margin-top: 3%;
+        padding: 10px;
+        height: auto;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Mobile Devices (480px - 767px) */
+@media screen and (max-width: 767px) {
+    .top-nav {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+    .logo {
+        width: 200px;
+        height: auto;
+        margin: 0;
+    }
+    .logo-items {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        gap: 5px;
+    }
+    .hero-section {
+        height: auto;
+        background-size: cover;
+    }
+    .hero-text-container {
+        margin-left: 2%;
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Small Mobile Devices (Below 480px) */
+@media screen and (max-width: 480px) {
+    .top-nav {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    .logo-items {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .social-icons {
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .nav-bar {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .hero-text-container {
+        width: 100%;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero-btn, .hero-btn1 {
+        width: 100%;
+    }
+}
+
+.client-card{
+    width: 258px;
+    height: 119px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
+    align-items: center;justify-content: center;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #FF7200;
+    border-radius: 50%;
+    padding: 10px;
+    color: #FF7200;
+}
+.carousel-control-prev-icon{
+    margin-left: -100%;
+}
+.carousel-control-next-icon{
+    margin-left: 100%;
+}
+.carousel-item {
+    padding: 20px 0;
+}
+
+.client-logo:hover {
+    opacity: 1;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color:#FF7200;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Hide desktop carousel on mobile */
+@media (max-width: 767.98px) {
+    #desktopCarousel {
+        display: none;
+    }
+}
+
+/* Hide mobile carousel on desktop */
+@media (min-width: 768px) {
+    #mobileCarousel {
+        display: none;
+    }
+}
+
+.client-card {
+    text-align: center;
+    padding: 15px;
+}
+.client-cards-container{
+    width: 1320px;
+    height: 219px;
+    top: 645px;
+    left: 59px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    }
+
+
+    .truck-insurance-quote {
+        padding: 3rem 0;
+       
+
+      }
+      
+      .text-orange {
+        color: #FF6B00;
+        font-family: Inter;
+font-weight: bold;
+font-size: 50px;
+line-height: 28px;
+letter-spacing: 0%;
+vertical-align: middle;
+
+      }
+      
+      .btn-orange {
+        background-color: #FF6B00;
+        color: white;
+        border-color: #FF6B00;
+      }
+      
+      .btn-orange:hover, .btn-orange:focus {
+        background-color: #E05E00;
+        color: white;
+        border-color: #E05E00;
+      }
+      
+      .btn-outline-orange {
+        color: #FF6B00;
+        border-color: #FF6B00;
+        background-color: white;
+      }
+      
+      .btn-outline-orange:hover, .btn-outline-orange:focus {
+        background-color: #FF6B00;
+        color: white;
+      }
+      
+      .bg-light-beige {
+        background-color: #FFF1E5;
+        box-shadow: 0px 4px 11.6px 0px #00000080;
+      }
+      
+      .quote-form label {
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+      
+      .quote-form .form-control, .quote-form .form-select {
+        border-radius: 0;
+        padding: 0.75rem 1rem;
+      }
+      
+      @media (max-width: 767.98px) {
+        .truck-insurance-quote {
+          padding: 2rem 0;
+        }
+        
+        .quote-form {
+          padding: 1.5rem !important;
+        }
+      }
+      .truck-insurance-quote {
+        padding: 3rem 0;
+      }
+      
+      .text-orange {
+        color: #FF6B00;
+      }
+      
+      .btn-orange {
+        background-color: #FF6B00;
+        color: white;
+        border-color: #FF6B00;
+      }
+      
+      .btn-orange:hover, .btn-orange:focus {
+        background-color: #E05E00;
+        color: white;
+        border-color: #E05E00;
+      }
+      
+      .btn-outline-orange {
+        color: #FF6B00;
+        border-color: #FF6B00;
+        background-color: white;
+      }
+      
+      .btn-outline-orange:hover, .btn-outline-orange:focus {
+        background-color: #FF6B00;
+        color: white;
+      }
+      
+      .bg-light-beige {
+        background-color: #FFF8F0;
+      }
+      
+      .quote-form label {
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+      
+      .quote-form .form-control, .quote-form .form-select {
+        border-radius: 0;
+        padding: 0.75rem 1rem;
+      }
+      
+      @media (max-width: 767.98px) {
+        .truck-insurance-quote {
+          padding: 2rem 0;
+        }
+        
+        .quote-form {
+          padding: 1.5rem !important;
+        }
+      }
+  
